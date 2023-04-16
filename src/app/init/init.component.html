@@ -1,8 +1,10 @@
-<p-button icon="pi pi-iconName" label="init works!"></p-button>
-
-
-<div class="card">
+<div class="card p-4">
   <p-steps [model]="items" [readonly]="false"></p-steps>
 </div>
-
-<router-outlet></router-outlet>
+<div class="align-items-center flex justify-content-center py-8 surface-ground ng-star-inserted">
+  <p-button icon="pi pi-angle-left" styleClass="p-button-rounded p-button-primary p-button-text"></p-button>
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <router-outlet></router-outlet>
+  </div>
+  <p-button icon="pi pi-angle-right" styleClass="p-button-rounded p-button-primary p-button-text"></p-button>
+</div>

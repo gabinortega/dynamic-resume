@@ -11,7 +11,8 @@ import { LocationComponent } from './location/location.component';
 const routes: Routes = [
   {
     path: '',
-    component: InitComponent,
+    redirectTo: '/init/personal',
+    pathMatch: 'full',
   },
   {
     path: 'init',

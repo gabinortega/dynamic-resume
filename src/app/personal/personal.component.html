@@ -1,0 +1,26 @@
+<div [formGroup]="formGroup">
+  <div class="text-center mb-5">
+    <div class="text-900 text-3xl font-medium mb-3">Personal Information</div>
+  </div>
+  <div>
+    <div class="card">
+      <div class="field">
+        <label for="fullName">Full Name</label>
+        <input pInputText type="text" id="fullName" formControlName="fullName" autofocus
+          title="Enter your name as you'd like to see it on the resume."
+          placeholder="Enter your name as you'd like to see it on your resume." aria-describedby="fullName-help"
+          class="w-full mb-3">
+      </div>
+      <div class="field">
+        <label for="phone" class="block text-900 font-medium mb-2">Phone</label>
+        <p-inputMask type="tel" id="phone" formControlName="phone" mask="(999) 999-9999" placeholder="(999) 999-9999"
+          class="w-full mb-3"></p-inputMask>
+      </div>
+      <div class="card">
+        <label for="email" class="block text-900 font-medium mb-2">Email</label>
+        <input pInputText type="email" id="email" formControlName="email" title="email" aria-describedby="email-help"
+          class="w-full mb-3" />
+      </div>
+    </div>
+  </div>
+</div>

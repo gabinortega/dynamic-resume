@@ -12,6 +12,7 @@ export class ProfileComponent {
 
   onUpload(event: any) {
     for (let file of event.files) {
+      this.uploadedFiles.length;
       this.uploadedFiles.push(file); // Agregar el archivo cargado a uploadedFiles
     }
   }

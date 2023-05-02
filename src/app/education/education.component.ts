@@ -15,15 +15,17 @@ export class EducationComponent implements OnInit {
 
   ngOnInit(): void {
     this.formGroup = new FormGroup({
-      fullName: new FormControl<string | null>(null),
-      phone: new FormControl<string | null>(null),
-      email: new FormControl<string | null>(null),
+      institution: new FormControl<string | null>(null),
+      field: new FormControl<string | null>(null),
+      degrees: new FormControl<string | null>(null),
+      institution_Location: new FormControl<string | null>(null),
+      graduation_date: new FormControl<string | null>(null),
     });
     this.getDegreesList();
   }
 
   getDegreesList() {
-    this.appService.getDegreesList().subscribe((response: never[]) => {
+    this.appService.getDegreesList().subscribe((response) => {
       this.degreesList = response;
     });
   }

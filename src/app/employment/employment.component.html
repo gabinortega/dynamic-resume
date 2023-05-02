@@ -41,8 +41,11 @@
                 title="Who employed you." placeholder="Who employed you." class="w-full mb-4" />
         </div>
         <div class="flex flex-column gap-2">
-            <textarea rows="5" cols="30" pInputTextarea [autoResize]="true"
-                placeholder="Put a description about the job." id="description" maxlength="250"></textarea>
+            <textarea id="float-input" rows="10" cols="55" pInputTextarea placeholder="Put a description about the job."
+                id="sumary" [autoResize]="true" class="w-full mb-4"></textarea>
+        </div>
+        <div class="flex flex-column gap-2">
+            <p-button label="Add another job" icon="pi pi-plus" class="w-full mb-4"></p-button>
         </div>
     </div>
 </div>

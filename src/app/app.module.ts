@@ -22,6 +22,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FileUploadModule } from 'primeng/fileupload';
 import { HttpClientModule } from '@angular/common/http';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { HttpClientModule } from '@angular/common/http';
     DropdownModule,
     FileUploadModule,
     HttpClientModule,
+    InputTextareaModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

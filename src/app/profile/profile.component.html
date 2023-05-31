@@ -1,1 +1,19 @@
-<p>profile works!</p>
+<div>
+    <div class="text-center mb-5">
+        <div class="text-900 text-3xl font-medium mb-3">Profile</div>
+    </div>
+    <div class="card">
+        <div class="text-600 text-1xl font-small mb-3">Drag your photo file and drop it in box:</div>
+
+        <p-fileUpload name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" (onUpload)="onUpload($event)"
+            [multiple]="true" accept="image/*" [maxFileSize]="1000000">
+            <ng-template pTemplate="content">
+                <ul *ngIf="uploadedFiles.length">
+                    <li *ngFor="let file of uploadedFiles">{{ file.name }}</li>
+                </ul>
+            </ng-template>
+        </p-fileUpload>
+        <div>
+        </div>
+    </div>
+</div>

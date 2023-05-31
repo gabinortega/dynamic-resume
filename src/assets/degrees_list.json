@@ -1,0 +1,38 @@
+[
+  {
+    "label": "Associate's Degree (A.A. or A.S.)"
+  },
+  {
+    "label": "Bachelor's Degree (B.A. or B.S.)"
+  },
+  {
+    "label": "Master's Degree (M.A. or M.S.)"
+  },
+  {
+    "label": "Doctoral Degree (Ph.D. or Ed.D.)"
+  },
+  {
+    "label": "Professional Degree (M.D., J.D., D.D.S., D.V.M., etc.)"
+  },
+  {
+    "label": "Certificate/Diploma"
+  },
+  {
+    "label": "Post-Baccalaureate Certificate"
+  },
+  {
+    "label": "Post-Master's Certificate"
+  },
+  {
+    "label": "Specialist Degree (Ed.S.)"
+  },
+  {
+    "label": "Honorary Degree"
+  },
+  {
+    "label": "Advanced Professional Degree"
+  },
+  {
+    "label": "Terminal Degree"
+  }
+]

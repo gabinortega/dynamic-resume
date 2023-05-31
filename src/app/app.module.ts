@@ -9,8 +9,8 @@ import { InputTextModule } from 'primeng/inputtext';
 import { CardModule } from 'primeng/card';
 import { InputMaskModule } from 'primeng/inputmask';
 import { CheckboxModule } from 'primeng/checkbox';
-
 import { InitComponent } from './init/init.component';
+import { DropdownModule } from 'primeng/dropdown';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PersonalComponent } from './personal/personal.component';
@@ -20,6 +20,9 @@ import { EducationComponent } from './education/education.component';
 import { EmploymentComponent } from './employment/employment.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 
 @NgModule({
   declarations: [
@@ -46,6 +49,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InputTextModule,
     InputMaskModule,
     CheckboxModule,
+    DropdownModule,
+    FileUploadModule,
+    HttpClientModule,
+    InputTextareaModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { InputTextModule } from 'primeng/inputtext';
 import { LocationComponent } from './location.component';
 
 describe('LocationComponent', () => {
@@ -8,9 +8,9 @@ describe('LocationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ LocationComponent ]
-    })
-    .compileComponents();
+      imports: [InputTextModule],
+      declarations: [LocationComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(LocationComponent);
     component = fixture.componentInstance;
